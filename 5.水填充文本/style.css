@@ -1,0 +1,31 @@
+body{
+    min-height: 100vh;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1{
+    font-size: 190px;
+    background:url('./water.png') repeat-x;
+    color: rgba(255, 255, 255, 0.1);
+    background-clip: text;
+    animation: moveBg 10s infinite linear;
+}
+
+@keyframes moveBg {
+    0%{
+        background-position: 0 0;
+    }
+    40%{
+        background-position: 800px 20px;
+    }
+    80%{
+        background-position: 1800px -20px;
+    }
+    100%{
+        background-position: 2200px 20px;
+    }
+    
+}
